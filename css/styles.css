@@ -1,0 +1,234 @@
+/* Cole Breen
+* ID: 8939986
+*/
+html{
+    font : normal normal normal 20px/1.5 Verdana, arial, Helvetica, sans-serif;
+}
+body{
+    height : auto;
+    width : auto;
+    background-color : hsla(0, 0%, 0%, 0.4);
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    color: blue;
+    font-size: 2.5rem;
+}
+ul li a {
+    list-style-type: square;
+    line-height: 1.5rem;
+    color : blue;
+    text-decoration: none;
+}
+h2{
+    font-size : 2rem; 
+    color : blue;  
+}
+header{
+    background-image: radial-gradient(orange 80%, blue 20%);
+    flex: 1 10%;
+}
+.home{
+    border: 2px solid blue;
+    width: 20rem;
+    margin: 1rem;
+    height: 25rem;
+    shape-outside: inset(0% 0% 0% 0%);
+    margin-inline-end: 1rem;
+}
+.home2{
+    border: 2px solid blue;
+    border-radius: 25%;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+.home3{
+    clip-path: polygon(0 0, 78% 0, 100% 100%, 19% 100%);
+    border: 2px solid blue;
+    border-radius: 25%;
+    
+}
+.home4{
+    border: 2px solid blue;
+    border-radius: 25%;
+}
+nav{
+    flex: 1 5%;
+}
+nav ul li{
+    display: inline;
+    position: relative;
+    list-style-type: none;
+}
+nav ul li ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+nav ul li a{
+    border: 2px solid blue;
+    color: blue;
+    background-color: orange;
+    text-decoration: none;
+    padding: 1rem;
+    margin: 0rem;
+    text-align: center;
+}
+nav ul li ul li{
+    display: flex;
+    white-space: nowrap;
+}
+#submenu {
+    display: none;
+    position: absolute;
+    padding: 1rem;
+    margin: 0rem;
+    
+
+}
+#hoverme:hover #submenu{
+    display: block;
+
+}
+section{
+    display: flex;
+    flex-direction: row;
+    flex: 4 8%;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.wrap{
+    shape-outside: inset(0% 0% 0% 0%);
+    margin-inline-end: 1rem;
+}
+main{
+    flex: 2 1 70%;
+    background-color: orange;
+}
+table{
+    border: 2px solid blue;
+}
+caption{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+figcaption{
+    margin: 1rem;
+    width: 20rem;
+    
+}
+#wrap{
+    margin: 1rem;
+    width: 10rem;
+    font-weight: bold;
+}
+#gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+iframe{
+    border: 2px solid blue;
+    border-radius: 20%;
+    padding: 1rem;  
+    margin: 1rem;
+    width: 40em;
+    height: 40em;
+}
+#noborder{
+    border: 0px solid blue;
+}
+img{
+    width: 80%;
+    height: 80%;
+}
+aside ul{
+    list-style-type: square;
+}
+aside li, a{
+    line-height: 2rem;
+    color : blue;
+}
+aside a{
+    color : blue;
+}
+aside a:hover{
+    color : black;
+}
+aside{
+    flex: 1 2 30%;
+    background-image: url(/images/WayneGretzky.jpeg);
+    background-position: center center;
+}
+#quote{
+    color: blue;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin: 1rem;   
+    padding: 1rem;
+}
+footer{
+    flex: 1 5%;
+    background-image: repeating-linear-gradient(orange 0%, blue 25%, white 10%);
+}
+.structural{
+        margin : 1rem;  
+        padding : 1rem;
+        border: 2px solid blue;
+        
+}
+#structuralheader{
+    border: 0;
+}
+form{
+    border: 5px solid blue;
+
+}
+input[type=text], input[type=email], input[type=submit], select, option{
+    display: block;
+    width: 50%;
+    height: 2em;
+}
+input[type=radio], input[type=checkbox]{
+    height: 2em;
+    width: 2em;
+}
+select, option, label, legend{
+    font-variant: small-caps;
+    font-weight: small;
+    font-size: 1.5rem;
+}
+textarea{
+    width: 50%;
+    display: block;
+}
+fieldset{
+    border: none;
+}
+footer p{
+    font-size : .75em;
+    color: black;
+    font-weight: bolder;
+}
+@media (max-width: 1200px){
+    html{
+        font-size: 15px;
+    }
+    aside{
+        background-image: url(/images/Wayne-Gretzky-NHL-Face-Off-Publicity-H-2022.webp);
+    }
+}
+@media (max-width: 600px){
+    #gallery{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    html{
+        font-size: 10px;
+    }
+    aside{
+        background-image: url(/images/anniversary-project-cutline-edmonton-journal-fileswayne-gre1.webp);
+    }
+}
